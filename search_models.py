@@ -176,7 +176,7 @@ def Run_Cairo_Sales():
    
     
     
-    driver = webdriver.Chrome("C:\Program Files\chromedriver.exe")
+    driver = webdriver.Chrome()
     list_of_categories = data["Category"].unique()
 
     Cairo_Sales_Web(driver,list_of_categories,data,Sharaf_DG)
@@ -188,7 +188,7 @@ def Run_Btech():
     data = pd.read_excel("models.xlsx",sheet_name="Models")
     Sharaf_DG = pd.read_excel("models.xlsx",sheet_name="Btech")
 
-    driver = webdriver.Chrome("C:\Program Files\chromedriver.exe")
+    driver = webdriver.Chrome()
     list_of_categories = data["Category"].unique()
 
     Btech_Web(driver,list_of_categories,data,Sharaf_DG)
